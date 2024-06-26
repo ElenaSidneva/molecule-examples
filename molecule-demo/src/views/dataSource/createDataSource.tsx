@@ -37,7 +37,8 @@ export class CreateDataSourceView extends React.Component {
     componentDidMount() {}
 
     submit = async (e: React.FormEvent) => {
-        const form = new FormData(this.formRef.current || undefined);
+        console.log('#####Submit#####')
+        /*const form = new FormData(this.formRef.current || undefined);
         const dataSource = {
             name: form.get('name')?.toString() || '',
             type: form.get('type')?.toString() || '',
@@ -58,11 +59,12 @@ export class CreateDataSourceView extends React.Component {
                 container.resolve(NotificationController).toggleNotifications();
                 // molecule.notification.toggleNotification(); // Invalid
             }
-        });
+        });*/
     }
 
     close = async (e: React.FormEvent) => {
-        existCreateDataSourceView();
+        console.log('#####Close####')
+        //existCreateDataSourceView();
     }
 
     render() {

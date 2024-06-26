@@ -8,6 +8,7 @@ export const Terminal = () => {
         // You can call any method in XTerm.js by using 'xterm xtermRef.current.terminal.[What you want to call]
         if (xtermRef && xtermRef.current && xtermRef.current.terminal) {
             xtermRef.current.terminal.writeln("Hello, Molecule!")
+            console.log('#####Terminal#####')
         }
     }, [])
 

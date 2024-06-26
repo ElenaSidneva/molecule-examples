@@ -59,12 +59,12 @@ export class DataSourceSidebarView extends React.Component {
                 icon: 'refresh',
                 id: 'reload',
                 title: 'Reload',
-                onClick: () => this.reload()
+                onClick: () => /*this.reload()*/ console.log('#####Reload#####')
             }, {
                 icon: 'add',
                 id: 'addDataSource',
                 title: 'Create Data Source',
-                onClick: () => this.create()
+                onClick: () => /*this.create()*/ console.log('#####CreateDataSourse#####')
             }
         ]
     }

@@ -26,7 +26,8 @@ export class MenuBarExtension implements IExtension {
         molecule.menuBar.setState({ data: nextData });
         molecule.menuBar.onSelect((menuId) => {
             if (menuId === vscodeMenuItem.id) {
-                window.location.href = '#/vscode';
+                /*window.location.href = '#/vscode';*/
+                console.log('#####VSCode#####')
             }
         });
         molecule.layout.setMenuBarMode('horizontal');
